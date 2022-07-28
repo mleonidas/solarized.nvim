@@ -378,7 +378,7 @@ theme.loadPlugins = function()
         TelescopeSelectionCaret =               { fg = solarized.purple },
         TelescopeSelection =                    { fg = solarized.purple },
         TelescopeMatching =                     { fg = solarized.cyan },
-        TelescopeNormal =                       { fg = solarized.fg, bg = solarized.float },
+        TelescopeNormal =                       { fg = solarized.fg, bg = solarized.none },
 
         -- NvimTree
         NvimTreeRootFolder =                    { fg = solarized.blue, style = "bold" },
