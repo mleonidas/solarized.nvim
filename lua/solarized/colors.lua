@@ -49,7 +49,7 @@ local solarized = {
 	orange =        '#cb4b16',
 	pink =          '#073642',
 
-	bg =            '#073642',
+	bg =            '#002b36',
 	bg_alt =        '#eee8d5',
 	fg =            '#657b83',
 	text =          '#586e75',
