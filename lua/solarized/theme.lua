@@ -236,7 +236,7 @@ theme.loadTreeSitter = function ()
         TSStringRegex =             { fg = solarized.blue }, -- For regexes.
         TSStringEscape =            { fg = solarized.disabled }, -- For escape characters within a string.
         TSSymbol =                  { fg = solarized.yellow},    -- For identifiers referring to symbols or atoms.
-        TSType =                    { fg = solarized.purple, style = 'bold' },    -- For types.
+        TSType =                    { fg = solarized.purple },    -- For types.
         TSTypeBuiltin =             { fg = solarized.purple },    -- For builtin types.
         TSTag =                     { fg = solarized.red, style = 'bold' },    -- Tags like html tag names.
         TSTagDelimiter =            { fg = solarized.yellow },    -- Tag delimiter like `<` `>` `/`
@@ -274,11 +274,11 @@ theme.loadTreeSitter = function ()
     if vim.g.solarized_italic_functions == true then
         treesitter.TSFunction =                { fg = solarized.blue, style = 'bold,italic' }    -- For fuction (calls and definitions).
         treesitter.TSMethod =                  { fg = solarized.blue, style = 'bold,italic' }    -- For method calls and definitions.
-        treesitter.TSFuncBuiltin =             { fg = solarized.yellow, style = 'bold,italic' }    -- For builtin functions: `table.insert` in Lua.
+        treesitter.TSFuncBuiltin =             { fg = solarized.purple, style = 'bold,italic' }    -- For builtin functions: `table.insert` in Lua.
     else
         treesitter.TSFunction =                { fg = solarized.blue}    -- For fuction (calls and definitions).
         treesitter.TSMethod =                  { fg = solarized.blue}    -- For method calls and definitions.
-        treesitter.TSFuncBuiltin =             { fg = solarized.yellow, style = 'bold' }    -- For builtin functions: `table.insert` in Lua.
+        treesitter.TSFuncBuiltin =             { fg = solarized.purple, style = 'bold' }    -- For builtin functions: `table.insert` in Lua.
     end
 
     if vim.g.solarized_italic_variables == true then
