@@ -47,6 +47,7 @@ local solarized = {
 	cyan =          '#2aa198',
 	blue =          '#268bd2',
 	purple =        '#6c71c4',
+    base0 =         '839496',
 	orange =        '#cb4b16',
 	pink =          '#073642',
     violet =        '#6c71c4',
@@ -64,7 +65,7 @@ local solarized = {
 	line_numbers =  '#839496',
 	highlight =     '#657b83',
 	disabled =      '#073642',
-	cursor =        '#586e75',
+	cursor =        '#002b36',
 	accent =        '#073642',
 
 	error =         '#d33682',
