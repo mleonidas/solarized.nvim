@@ -8,7 +8,6 @@
 "     `':::''       `'::'-'       `'::.-'       `':..-'       `-...-'
 "
 " Colorscheme name:    solarized.nvim
-" Description:         Port of VSCode's Moonlight colorscheme for NeoVim
 " Author:              https://github.com/shaunsingh
 
 lua << EOF
