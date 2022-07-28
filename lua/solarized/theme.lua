@@ -6,16 +6,16 @@ theme.loadSyntax = function ()
     -- Syntax highlight groups
 
 	local syntax = {
-		Type =						{ fg = solarized.purple }, -- int, long, char, etc.
+		Type =						{ fg = solarized.yellow }, -- int, long, char, etc.
 		StorageClass =				{ fg = solarized.cyan }, -- static, register, volatile, etc.
 		Structure =					{ fg = solarized.puple }, -- struct, union, enum, etc.
-		Constant =					{ fg = solarized.yellow }, -- any constant
-		String =					{ fg = solarized.green, bg = solarized.none, style= 'italic' }, -- Any string
+		Constant =					{ fg = solarized.cyan }, -- any constant
+		String =					{ fg = solarized.cyan, bg = solarized.none, style= 'italic' }, -- Any string
 		Character =					{ fg = solarized.orange }, -- any character constant: 'c', '\n'
 		Number =					{ fg = solarized.orange }, -- a number constant: 5
 		Boolean =					{ fg = solarized.orange }, -- a boolean constant: TRUE, false
 		Float =						{ fg = solarized.orange }, -- a floating point constant: 2.3e10
-		Statement =					{ fg = solarized.pink }, -- any statement
+		Statement =					{ fg = solarized.green }, -- any statement
 		Label =						{ fg = solarized.purple }, -- case, default, etc.
 		Operator =					{ fg = solarized.cyan }, -- sizeof", "+", "*", etc.
 		Exception =					{ fg = solarized.cyan }, -- try, catch, throw
@@ -31,10 +31,10 @@ theme.loadSyntax = function ()
 		Delimiter =					{ fg = solarized.cyan }, -- character that needs attention like , or .
 		SpecialComment =			{ fg = solarized.gray }, -- special things inside a comment
 		Debug =						{ fg = solarized.red }, -- debugging statements
-		Underlined =				{ fg = solarized.link, bg = solarized.none, style = 'underline' }, -- text that stands out, HTML links
+		Underlined =				{ fg = solarized.violet, bg = solarized.none, style = 'underline' }, -- text that stands out, HTML links
 		Ignore =					{ fg = solarized.disabled }, -- left blank, hidden
 		Error =						{ fg = solarized.error, bg = solarized.none, style = 'bold,underline' }, -- any erroneous construct
-		Todo =						{ fg = solarized.yellow, bg = solarized.none, style = 'bold,italic' }, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+		Todo =						{ fg = solarized.magenta, bg = solarized.none, style = 'bold,italic' }, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 
         htmlLink = { fg = solarized.link, style = "underline" },
         htmlH1 = { fg = solarized.cyan, style = "bold" },
@@ -72,15 +72,15 @@ theme.loadSyntax = function ()
 
 	-- Italic Function names
 	if vim.g.solarized_italic_functions == true then
-		syntax.Function =		{fg = solarized.blue, bg = solarized.none, style = 'italic'} -- italic funtion names
+		syntax.Function =		{fg = solarized.green, bg = solarized.none, style = 'italic'} -- italic funtion names
 	else
-		syntax.Function =		{fg = solarized.blue} -- normal function names
+		syntax.Function =		{fg = solarized.green} -- normal function names
 	end
 
 	if vim.g.solarized_italic_variables == true then
-		syntax.Identifier =				{fg = solarized.gray, bg = solarized.none, style = 'italic'}; -- any variable name
+		syntax.Identifier =				{fg = solarized.blue, bg = solarized.none, style = 'italic'}; -- any variable name
     else
-		syntax.Identifier =				{fg = solarized.gray}; -- any variable name
+		syntax.Identifier =				{fg = solarized.blue}; -- any variable name
     end
 
     return syntax
@@ -165,11 +165,11 @@ theme.loadEditor = function ()
 
     --Set transparent background
     if vim.g.solarized_disable_background == true then
+		editor.Normal =				{ fg = solarized.base1, bg = solarized.none } -- normal text and background color
+		editor.SignColumn =			{ fg = solarized.base1, bg = solarized.none }
+    else
 		editor.Normal =				{ fg = solarized.fg, bg = solarized.none } -- normal text and background color
 		editor.SignColumn =			{ fg = solarized.fg, bg = solarized.none }
-    else
-		editor.Normal =				{ fg = solarized.fg, bg = solarized.bg } -- normal text and background color
-		editor.SignColumn =			{ fg = solarized.fg, bg = solarized.bg }
     end
 
     -- Remove window split borders
@@ -225,14 +225,14 @@ theme.loadTreeSitter = function ()
         TSNamespace =               { fg = solarized.yellow },    -- For identifiers referring to modules and namespaces.
         --TSNone =                    { },    -- TODO: docs
         TSNumber =                  { fg = solarized.orange},    -- For all numbers
-        TSOperator =                { fg = solarized.black}, -- For any operator: `+`, but also `->` and `*` in C.
+        TSOperator =                { fg = solarized.green}, -- For any operator: `+`, but also `->` and `*` in C.
         TSParameter =               { fg = solarized.green }, -- For parameters of a function.
         TSParameterReference=       { fg = solarized.green },    -- For references to parameters of a function.
         TSProperty =                { fg = solarized.green }, -- Same as `TSField`.
         TSPunctDelimiter =          { fg = solarized.black }, -- For delimiters ie: `.`
-        TSPunctBracket =            { fg = solarized.black }, -- For brackets and parens.
-        TSPunctSpecial =            { fg = solarized.black }, -- For special punctutation that does not fall in the catagories before.
-        TSString =                  { fg = solarized.link },    -- For strings.
+        TSPunctBracket =            { fg = solarized.purple }, -- For brackets and parens.
+        TSPunctSpecial =            { fg = solarized.purple }, -- For special punctutation that does not fall in the catagories before.
+        TSString =                  { fg = solarized.cyan },    -- For strings.
         TSStringRegex =             { fg = solarized.blue }, -- For regexes.
         TSStringEscape =            { fg = solarized.disabled }, -- For escape characters within a string.
         TSSymbol =                  { fg = solarized.yellow},    -- For identifiers referring to symbols or atoms.
