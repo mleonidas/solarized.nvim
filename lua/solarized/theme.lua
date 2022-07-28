@@ -61,11 +61,11 @@ theme.loadSyntax = function ()
 
 	-- Italic Keywords
 	if vim.g.solarized_italic_keywords == true then
-		syntax.Conditional =		{fg = solarized.purple, bg = solarized.none, style = 'italic'} -- italic if, then, else, endif, switch, etc.
+		syntax.Conditional =		{fg = solarized.yellow, bg = solarized.none, style = 'italic'} -- italic if, then, else, endif, switch, etc.
 		syntax.Keyword =			{fg = solarized.purple, bg = solarized.none, style = 'italic'} -- italic for, do, while, etc.
 		syntax.Repeat =				{fg = solarized.purple, bg = solarized.none, style = 'italic'} -- italic any other keyword
 	else
-		syntax.Conditional =		{fg = solarized.purple} -- normal if, then, else, endif, switch, etc.
+		syntax.Conditional =		{fg = solarized.yellow} -- normal if, then, else, endif, switch, etc.
 		syntax.Keyword =			{fg = solarized.purple} -- normal for, do, while, etc.
 		syntax.Repeat =				{fg = solarized.purple} -- normal any other keyword
 	end
@@ -110,11 +110,11 @@ theme.loadEditor = function ()
 		LineNr =				{ fg = solarized.line_numbers, bg = solarized.bg_alt },
 		CursorLineNr =			{ fg = solarized.accent },
 		MatchParen =			{ fg = solarized.yellow, bg = solarized.none, style = 'bold' },
-		ModeMsg =				{ fg = solarized.accent },
-		MoreMsg =				{ fg = solarized.accent },
+		ModeMsg =				{ fg = solarized.fg },
+		MoreMsg =				{ fg = solarized.fg },
 		NonText =				{ fg = solarized.disabled },
 		Pmenu =					{ fg = solarized.fg, bg = solarized.none },
-		PmenuSel =				{ fg = solarized.accent, bg = solarized.active },
+		PmenuSel =				{ fg = solarized.fg, bg = solarized.active },
 		PmenuSbar =				{ fg = solarized.text, bg = solarized.contrast },
 		PmenuThumb =			{ fg = solarized.fg, bg = solarized.accent },
 		Question =				{ fg = solarized.green },
