@@ -209,7 +209,7 @@ theme.loadTreeSitter = function ()
     local treesitter = {
         TSAnnotation =              { fg = solarized.red, style = 'bold' },    -- For C++/Dart attributes, annotations that can be attached to the code to denote some kind of meta information.
         TSAttribute =               { fg = solarized.yellow},    -- (unstable) TODO: docs
-        TSBoolean=                  { fg = solarized.orange},    -- For booleans.
+        TSBoolean=                  { fg = solarized.cyan},    -- For booleans.
         TSCharacter=                { fg = solarized.orange},    -- For characters.
         TSConstructor =             { fg = solarized.purple}, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
         TSConstant =                { fg = solarized.yellow },    -- For constants
