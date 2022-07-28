@@ -93,7 +93,7 @@ theme.loadEditor = function ()
 
 	local editor = {
 		NormalFloat =			{ fg = solarized.fg, bg = solarized.float }, -- normal text and background color
-		ColorColumn =			{ fg = solarized.none, bg = solarized.active }, --  used for the columns set with 'colorcolumn'
+		ColorColumn =			{ fg = solarized.none, bg = solarized.gray }, --  used for the columns set with 'colorcolumn'
 		Conceal =				{ fg = solarized.disabled }, -- placeholder characters substituted for concealed text (see 'conceallevel')
 		Cursor =				{ fg = solarized.cursor, bg = solarized.none, style = 'reverse' }, -- the character under the cursor
 		CursorIM =				{ fg = solarized.cursor, bg = solarized.none, style = 'reverse' }, -- like Cursor, but used when in IME mode
@@ -127,7 +127,7 @@ theme.loadEditor = function ()
 		SpellLocal =			{ fg = solarized.cyan, bg = solarized.none, style = 'italic,undercurl' },
 		SpellRare =				{ fg = solarized.purple, bg = solarized.none, style = 'italic,undercurl' },
 		StatusLine =			{ fg = solarized.fg, bg = solarized.contrast },
-		StatusLineNC =  		{ fg = solarized.text, bg = solarized.disabled },
+		StatusLineNC =		    { fg = solarized.text, bg = solarized.disabled },
 		StatusLineTerm =		{ fg = solarized.fg, bg = solarized.contrast },
 		StatusLineTermNC =		{ fg = solarized.text, bg = solarized.disabled },
 		TabLineFill =			{ fg = solarized.fg },

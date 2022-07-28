@@ -61,7 +61,7 @@ local solarized = {
 	line_numbers =  '#839496',
 	highlight =     '#657b83',
 	disabled =      '#073642',
-	cursor =        '#268bd2',
+	cursor =        '#586e75',
 	accent =        '#073642',
 
 	error =         '#d33682',
