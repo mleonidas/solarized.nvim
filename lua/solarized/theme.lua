@@ -276,8 +276,8 @@ theme.loadTreeSitter = function ()
         treesitter.TSMethod =                  { fg = solarized.blue, style = 'bold,italic' }    -- For method calls and definitions.
         treesitter.TSFuncBuiltin =             { fg = solarized.yellow, style = 'bold,italic' }    -- For builtin functions: `table.insert` in Lua.
     else
-        treesitter.TSFunction =                { fg = solarized.blue, style = 'bold' }    -- For fuction (calls and definitions).
-        treesitter.TSMethod =                  { fg = solarized.blue, style = 'bold' }    -- For method calls and definitions.
+        treesitter.TSFunction =                { fg = solarized.blue}    -- For fuction (calls and definitions).
+        treesitter.TSMethod =                  { fg = solarized.blue}    -- For method calls and definitions.
         treesitter.TSFuncBuiltin =             { fg = solarized.yellow, style = 'bold' }    -- For builtin functions: `table.insert` in Lua.
     end
 
