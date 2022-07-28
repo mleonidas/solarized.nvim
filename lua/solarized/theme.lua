@@ -217,10 +217,10 @@ theme.loadTreeSitter = function ()
         TSConstMacro =              { fg = solarized.blue },    -- For constants that are defined by macros: `NULL` in C.
         TSError =                   { fg = solarized.error, style = 'bold' },    -- For syntax/parser errors.
         TSException =               { fg = solarized.yellow, style = 'bold' },    -- For exception related keywords.
-        TSField =                   { fg = solarized.gray}, -- For fields.
+        TSField =                   { fg = solarized.base1}, -- For fields.
         TSFloat =                   { fg = solarized.red},    -- For floats.
         TSFuncMacro =               { fg = solarized.blue },    -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
-        TSInclude =                 { fg = solarized.cyan, style = 'bold' },    -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
+        TSInclude =                 { fg = solarized.green, style = 'bold' },    -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
         TSLabel =                   { fg = solarized.red }, -- For labels: `label:` in C and `:label:` in Lua.
         TSNamespace =               { fg = solarized.yellow },    -- For identifiers referring to modules and namespaces.
         --TSNone =                    { },    -- TODO: docs
@@ -229,7 +229,7 @@ theme.loadTreeSitter = function ()
         TSParameter =               { fg = solarized.green }, -- For parameters of a function.
         TSParameterReference=       { fg = solarized.green },    -- For references to parameters of a function.
         TSProperty =                { fg = solarized.green }, -- Same as `TSField`.
-        TSPunctDelimiter =          { fg = solarized.black }, -- For delimiters ie: `.`
+        TSPunctDelimiter =          { fg = solarized.green }, -- For delimiters ie: `.`
         TSPunctBracket =            { fg = solarized.purple }, -- For brackets and parens.
         TSPunctSpecial =            { fg = solarized.purple }, -- For special punctutation that does not fall in the catagories before.
         TSString =                  { fg = solarized.cyan },    -- For strings.
@@ -268,25 +268,25 @@ theme.loadTreeSitter = function ()
         treesitter.TSConditional =             { fg = solarized.green}    -- For keywords related to conditionnals.
         treesitter.TSKeyword =                 { fg = solarized.green} -- For keywords that don't fall in previous categories.
         treesitter.TSRepeat =                  { fg = solarized.green, style = 'bold' }    -- For keywords related to loops.
-        treesitter.TSKeywordFunction =         { fg = solarized.green, style = 'bold' } -- For keywords used to define a fuction.
+        treesitter.TSKeywordFunction =         { fg = solarized.blue} -- For keywords used to define a fuction.
     end
 
     if vim.g.solarized_italic_functions == true then
-        treesitter.TSFunction =                { fg = solarized.purple, style = 'bold,italic' }    -- For fuction (calls and definitions).
-        treesitter.TSMethod =                  { fg = solarized.purple, style = 'bold,italic' }    -- For method calls and definitions.
+        treesitter.TSFunction =                { fg = solarized.blue, style = 'bold,italic' }    -- For fuction (calls and definitions).
+        treesitter.TSMethod =                  { fg = solarized.blue, style = 'bold,italic' }    -- For method calls and definitions.
         treesitter.TSFuncBuiltin =             { fg = solarized.yellow, style = 'bold,italic' }    -- For builtin functions: `table.insert` in Lua.
     else
-        treesitter.TSFunction =                { fg = solarized.purple, style = 'bold' }    -- For fuction (calls and definitions).
-        treesitter.TSMethod =                  { fg = solarized.purple, style = 'bold' }    -- For method calls and definitions.
+        treesitter.TSFunction =                { fg = solarized.blue, style = 'bold' }    -- For fuction (calls and definitions).
+        treesitter.TSMethod =                  { fg = solarized.blue, style = 'bold' }    -- For method calls and definitions.
         treesitter.TSFuncBuiltin =             { fg = solarized.yellow, style = 'bold' }    -- For builtin functions: `table.insert` in Lua.
     end
 
     if vim.g.solarized_italic_variables == true then
-        treesitter.TSVariable =                { fg = solarized.gray, style = 'italic' } -- Any variable name that does not have another highlight.
-        treesitter.TSVariableBuiltin =         { fg = solarized.gray, style = 'italic' } -- Variable names that are defined by the languages, like `this` or `self`.
+        treesitter.TSVariable =                { fg = solarized.base1, style = 'italic' } -- Any variable name that does not have another highlight.
+        treesitter.TSVariableBuiltin =         { fg = solarized.base1, style = 'italic' } -- Variable names that are defined by the languages, like `this` or `self`.
     else
-        treesitter.TSVariable =                { fg = solarized.cursor} -- Any variable name that does not have another highlight.
-        treesitter.TSVariableBuiltin =         { fg = solarized.cursor} -- Variable names that are defined by the languages, like `this` or `self`.
+        treesitter.TSVariable =                { fg = solarized.base1} -- Any variable name that does not have another highlight.
+        treesitter.TSVariableBuiltin =         { fg = solarized.base1} -- Variable names that are defined by the languages, like `this` or `self`.
     end
 
     return treesitter
