@@ -236,8 +236,8 @@ theme.loadTreeSitter = function ()
         TSStringRegex =             { fg = solarized.blue }, -- For regexes.
         TSStringEscape =            { fg = solarized.disabled }, -- For escape characters within a string.
         TSSymbol =                  { fg = solarized.yellow},    -- For identifiers referring to symbols or atoms.
-        TSType =                    { fg = solarized.purple },    -- For types.
-        TSTypeBuiltin =             { fg = solarized.purple },    -- For builtin types.
+        TSType =                    { fg = solarized.yellow },    -- For types.
+        TSTypeBuiltin =             { fg = solarized.yellow },    -- For builtin types.
         TSTag =                     { fg = solarized.red, style = 'bold' },    -- Tags like html tag names.
         TSTagDelimiter =            { fg = solarized.yellow },    -- Tag delimiter like `<` `>` `/`
         TSText =                    { fg = solarized.text },    -- For strings considered text in a markup language.
