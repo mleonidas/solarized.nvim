@@ -442,6 +442,9 @@ theme.loadPlugins = function()
 	 -- Nvim dap
          DapBreakpoint =                         { fg = solarized.red },
          DapStopped =                            { fg = solarized.green },
+
+     -- Make
+     makeCommands = { fg = solarized.fg },
     }
 
     -- Options:
