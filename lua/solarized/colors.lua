@@ -37,7 +37,7 @@ local lightSolarized = {
 local solarized = {
 
 	white =         '#eee8d5',
-	gray =          '#073642',
+	gray =          '#586e75',
 	black =         '#002b36',
     base1 =         '#93a1a1',
 	red =           '#dc322f',
