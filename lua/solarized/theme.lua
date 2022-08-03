@@ -444,7 +444,7 @@ theme.loadPlugins = function()
          DapStopped =                            { fg = solarized.green },
 
      -- Make
-     makeCommands = { fg = solarized.fg },
+     makeCommands = { fg = solarized.gray },
     }
 
     -- Options:
