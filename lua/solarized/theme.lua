@@ -138,7 +138,7 @@ theme.loadEditor = function ()
 		VisualNOS =				{ fg = solarized.none, bg = solarized.selection },
 		WarningMsg =			{ fg = solarized.yellow },
 		WildMenu =				{ fg = solarized.orange, bg = solarized.none, style = 'bold' },
-		CursorColumn =			{ fg = solarized.none, bg = solarized.active },
+		CursorColumn =			{ fg = solarized.none, bg = solarized.bg_alt },
 		CursorLine =			{ fg = solarized.none, bg = solarized.bg_alt },
 		ToolbarLine =			{ fg = solarized.fg, bg = solarized.bg_alt },
 		ToolbarButton =			{ fg = solarized.fg, bg = solarized.none, style = 'bold' },
