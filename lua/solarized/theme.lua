@@ -224,7 +224,7 @@ theme.loadTreeSitter = function ()
         TSLabel =                   { fg = solarized.red }, -- For labels: `label:` in C and `:label:` in Lua.
         TSNamespace =               { fg = solarized.blue },    -- For identifiers referring to modules and namespaces.
         --TSNone =                    { },    -- TODO: docs
-        TSNumber =                  { fg = solarized.orange},    -- For all numbers
+        TSNumber =                  { fg = solarized.cyan },    -- For all numbers
         TSOperator =                { fg = solarized.green}, -- For any operator: `+`, but also `->` and `*` in C.
         TSParameter =               { fg = solarized.green }, -- For parameters of a function.
         TSParameterReference=       { fg = solarized.green },    -- For references to parameters of a function.
