@@ -217,8 +217,8 @@ theme.loadTreeSitter = function ()
         TSConstMacro =              { fg = solarized.blue },    -- For constants that are defined by macros: `NULL` in C.
         TSError =                   { fg = solarized.error, style = 'bold' },    -- For syntax/parser errors.
         TSException =               { fg = solarized.yellow, style = 'bold' },    -- For exception related keywords.
-        TSField =                   { fg = solarized.base1}, -- For fields.
-        TSFloat =                   { fg = solarized.red},    -- For floats.
+        TSField =                   { fg = solarized.blue }, -- For fields.
+        TSFloat =                   { fg = solarized.red },    -- For floats.
         TSFuncMacro =               { fg = solarized.blue },    -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
         TSInclude =                 { fg = solarized.green, style = 'bold' },    -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
         TSLabel =                   { fg = solarized.red }, -- For labels: `label:` in C and `:label:` in Lua.
