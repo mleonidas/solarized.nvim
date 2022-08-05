@@ -222,7 +222,7 @@ theme.loadTreeSitter = function ()
         TSFuncMacro =               { fg = solarized.blue },    -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
         TSInclude =                 { fg = solarized.green, style = 'bold' },    -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
         TSLabel =                   { fg = solarized.red }, -- For labels: `label:` in C and `:label:` in Lua.
-        TSNamespace =               { fg = solarized.yellow },    -- For identifiers referring to modules and namespaces.
+        TSNamespace =               { fg = solarized.blue },    -- For identifiers referring to modules and namespaces.
         --TSNone =                    { },    -- TODO: docs
         TSNumber =                  { fg = solarized.orange},    -- For all numbers
         TSOperator =                { fg = solarized.green}, -- For any operator: `+`, but also `->` and `*` in C.
@@ -260,7 +260,7 @@ theme.loadTreeSitter = function ()
     end
 
     if vim.g.solarized_italic_keywords == true then
-        treesitter.TSConditional =             { fg = solarized.greeen, style = 'italic' }    -- For keywords related to conditionnals.
+        treesitter.TSConditional =             { fg = solarized.green, style = 'italic' }    -- For keywords related to conditionnals.
         treesitter.TSKeyword =                 { fg = solarized.green, style = 'italic' } -- For keywords that don't fall in previous categories.
         treesitter.TSRepeat =                  { fg = solarized.green, style = 'bold,italic' }    -- For keywords related to loops.
         treesitter.TSKeywordFunction =         { fg = solarized.green, style = 'bold,italic' } -- For keywords used to define a fuction.
