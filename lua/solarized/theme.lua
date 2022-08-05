@@ -93,7 +93,7 @@ theme.loadEditor = function ()
 
 	local editor = {
 		NormalFloat =			{ fg = solarized.fg, bg = solarized.float }, -- normal text and background color
-		ColorColumn =			{ fg = solarized.none, bg = solarized.gray }, --  used for the columns set with 'colorcolumn'
+		ColorColumn =			{ fg = solarized.none, bg = solarized.bg_alt }, --  used for the columns set with 'colorcolumn'
 		Conceal =				{ fg = solarized.disabled }, -- placeholder characters substituted for concealed text (see 'conceallevel')
 		Cursor =				{ fg = solarized.cursor, bg = solarized.none, style = 'reverse' }, -- the character under the cursor
 		CursorIM =				{ fg = solarized.cursor, bg = solarized.none, style = 'reverse' }, -- like Cursor, but used when in IME mode
@@ -138,7 +138,7 @@ theme.loadEditor = function ()
 		VisualNOS =				{ fg = solarized.none, bg = solarized.selection },
 		WarningMsg =			{ fg = solarized.yellow },
 		WildMenu =				{ fg = solarized.orange, bg = solarized.none, style = 'bold' },
-		CursorColumn =			{ fg = solarized.none, bg = solarized.bg_alt },
+		CursorColumn =			{ fg = solarized.none, bg = solarized.active },
 		CursorLine =			{ fg = solarized.none, bg = solarized.bg_alt },
 		ToolbarLine =			{ fg = solarized.fg, bg = solarized.bg_alt },
 		ToolbarButton =			{ fg = solarized.fg, bg = solarized.none, style = 'bold' },
@@ -442,6 +442,7 @@ theme.loadPlugins = function()
 	 -- Nvim dap
          DapBreakpoint =                         { fg = solarized.red },
          DapStopped =                            { fg = solarized.green },
+
     }
 
     -- Options:
