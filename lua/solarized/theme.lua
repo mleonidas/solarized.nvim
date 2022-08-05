@@ -108,7 +108,7 @@ theme.loadEditor = function ()
 		FoldColumn =			{ fg = solarized.blue },
 		IncSearch =				{ fg = solarized.highlight, bg = solarized.white, style = 'reverse' },
 		LineNr =				{ fg = solarized.line_numbers, bg = solarized.bg_alt },
-		CursorLineNr =			{ fg = solarized.accent },
+		CursorLineNr =			{ fg = solarized.none },
 		MatchParen =			{ fg = solarized.yellow, bg = solarized.none, style = 'bold' },
 		ModeMsg =				{ fg = solarized.fg },
 		MoreMsg =				{ fg = solarized.fg },
