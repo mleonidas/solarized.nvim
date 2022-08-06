@@ -131,7 +131,7 @@ theme.loadEditor = function ()
 		StatusLineTerm =		{ fg = solarized.fg, bg = solarized.contrast },
 		StatusLineTermNC =		{ fg = solarized.text, bg = solarized.disabled },
 		TabLineFill =			{ fg = solarized.fg },
-		TablineSel =			{ fg = solarized.bg, bg = solarized.accent },
+		TablineSel =			{ fg = solarized.purple, bg = solarized.accent },
 		Tabline =				{ fg = solarized.fg },
 		Title =					{ fg = solarized.green, bg = solarized.none, style = 'bold' },
 		Visual =				{ fg = solarized.none, bg = solarized.selection },
