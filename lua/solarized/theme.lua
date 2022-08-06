@@ -282,11 +282,11 @@ theme.loadTreeSitter = function ()
     end
 
     if vim.g.solarized_italic_variables == true then
-        treesitter.TSVariable =                { fg = solarized.base01, style = 'italic' } -- Any variable name that does not have another highlight.
-        treesitter.TSVariableBuiltin =         { fg = solarized.base01, style = 'italic' } -- Variable names that are defined by the languages, like `this` or `self`.
+        treesitter.TSVariable =                { fg = solarized.base0, style = 'italic' } -- Any variable name that does not have another highlight.
+        treesitter.TSVariableBuiltin =         { fg = solarized.base0, style = 'italic' } -- Variable names that are defined by the languages, like `this` or `self`.
     else
-        treesitter.TSVariable =                { fg = solarized.base01} -- Any variable name that does not have another highlight.
-        treesitter.TSVariableBuiltin =         { fg = solarized.base01} -- Variable names that are defined by the languages, like `this` or `self`.
+        treesitter.TSVariable =                { fg = solarized.base0} -- Any variable name that does not have another highlight.
+        treesitter.TSVariableBuiltin =         { fg = solarized.base0} -- Variable names that are defined by the languages, like `this` or `self`.
     end
 
     return treesitter
