@@ -8,7 +8,7 @@ theme.loadSyntax = function ()
 	local syntax = {
 		Type =						{ fg = solarized.yellow }, -- int, long, char, etc.
 		StorageClass =				{ fg = solarized.cyan }, -- static, register, volatile, etc.
-		Structure =					{ fg = solarized.puple }, -- struct, union, enum, etc.
+		Structure =					{ fg = solarized.purple }, -- struct, union, enum, etc.
 		Constant =					{ fg = solarized.cyan }, -- any constant
 		String =					{ fg = solarized.cyan, bg = solarized.none, style= 'italic' }, -- Any string
 		Character =					{ fg = solarized.orange }, -- any character constant: 'c', '\n'
@@ -168,7 +168,7 @@ theme.loadEditor = function ()
 		editor.Normal =				{ fg = solarized.base1, bg = solarized.none } -- normal text and background color
 		editor.SignColumn =			{ fg = solarized.base1, bg = solarized.none }
     else
-		editor.Normal =				{ fg = solarized.fg, bg = solarized.none } -- normal text and background color
+		editor.Normal =				{ fg = solarized.base1, bg = solarized.none } -- normal text and background color
 		editor.SignColumn =			{ fg = solarized.fg, bg = solarized.none }
     end
 
@@ -226,7 +226,7 @@ theme.loadTreeSitter = function ()
         --TSNone =                    { },    -- TODO: docs
         TSNumber =                  { fg = solarized.cyan },    -- For all numbers
         TSOperator =                { fg = solarized.green}, -- For any operator: `+`, but also `->` and `*` in C.
-        TSParameter =               { fg = solarized.green }, -- For parameters of a function.
+        TSParameter =               { fg = solarized.purple }, -- For parameters of a function.
         TSParameterReference=       { fg = solarized.green },    -- For references to parameters of a function.
         TSProperty =                { fg = solarized.green }, -- Same as `TSField`.
         TSPunctDelimiter =          { fg = solarized.green }, -- For delimiters ie: `.`
@@ -236,7 +236,7 @@ theme.loadTreeSitter = function ()
         TSStringRegex =             { fg = solarized.blue }, -- For regexes.
         TSStringEscape =            { fg = solarized.disabled }, -- For escape characters within a string.
         TSSymbol =                  { fg = solarized.yellow},    -- For identifiers referring to symbols or atoms.
-        TSType =                    { fg = solarized.yellow },    -- For types.
+        TSType =                    { fg = solarized.blue },    -- For types.
         TSTypeBuiltin =             { fg = solarized.yellow },    -- For builtin types.
         TSTag =                     { fg = solarized.red, style = 'bold' },    -- Tags like html tag names.
         TSTagDelimiter =            { fg = solarized.yellow },    -- Tag delimiter like `<` `>` `/`
@@ -442,6 +442,10 @@ theme.loadPlugins = function()
 	 -- Nvim dap
          DapBreakpoint =                         { fg = solarized.red },
          DapStopped =                            { fg = solarized.green },
+
+     -- Python
+       pythonTsField =              { fg = solarized.base0 },
+       pythonTSConstructor = { fg = solarized.yellow }
 
     }
 
