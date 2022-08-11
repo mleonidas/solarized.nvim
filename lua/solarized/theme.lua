@@ -440,12 +440,13 @@ theme.loadPlugins = function()
         IndentBlanklineContextChar =            { fg = solarized.disabled },
 
 	 -- Nvim dap
-         DapBreakpoint =                         { fg = solarized.red },
-         DapStopped =                            { fg = solarized.green },
+         DapBreakpoint =                        { fg = solarized.red },
+         DapStopped =                           { fg = solarized.green },
 
      -- Python
-       pythonTsField =              { fg = solarized.base0 },
-       pythonTSConstructor = { fg = solarized.yellow }
+       pythonTsField =                          { fg = solarized.base0 },
+       pythonTSConstructor =                    { fg = solarized.yellow },
+       pythonTSVariableBuiltin =                { fg = solarized.magenta }
 
     }
 
