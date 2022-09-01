@@ -234,7 +234,7 @@ theme.loadTreeSitter = function ()
         TSPunctSpecial =            { fg = solarized.purple }, -- For special punctutation that does not fall in the catagories before.
         TSString =                  { fg = solarized.cyan },    -- For strings.
         TSStringRegex =             { fg = solarized.blue }, -- For regexes.
-        TSStringEscape =            { fg = solarized.disabled }, -- For escape characters within a string.
+        TSStringEscape =            { fg = solarized.fg }, -- For escape characters within a string.
         TSSymbol =                  { fg = solarized.yellow},    -- For identifiers referring to symbols or atoms.
         TSType =                    { fg = solarized.blue },    -- For types.
         TSTypeBuiltin =             { fg = solarized.yellow },    -- For builtin types.
