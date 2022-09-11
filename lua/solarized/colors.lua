@@ -49,10 +49,9 @@ local solarized = {
 	purple =        '#6c71c4',
     base0 =         '#839496',
 	orange =        '#cb4b16',
-	pink =          '#073642',
+	pink =          '#9F2B68',
     violet =        '#6c71c4',
     magenta =       '#d33682',
-
 	bg =            '#002b36',
 	bg_alt =        '#073642',
 	fg =            '#657b83',
@@ -63,14 +62,13 @@ local solarized = {
 	active =        '#d8ccc4',
 	border =        '#002b36',
 	line_numbers =  '#839496',
-	highlight =     '#D1D100',
+	highlight =     '#ffff00',
 	disabled =      '#073642',
+    charcoal =      '#36454F',
 	cursor =        '#002b36',
 	accent =        '#073642',
-
 	error =         '#d33682',
 	link =          '#2aa198',
-
 	none =          'NONE'
 }
 

@@ -436,8 +436,8 @@ theme.loadPlugins = function()
         SneakScope =                            { bg = solarized.selection },
 
         -- Indent Blankline
-        IndentBlanklineChar =                   { fg = solarized.highlight },
-        IndentBlanklineContextChar =            { fg = solarized.disabled },
+        IndentBlanklineChar =                   { fg = solarized.charcoal},
+        IndentBlanklineContextChar =            { fg = solarized.comments },
 
 	 -- Nvim dap
          DapBreakpoint =                        { fg = solarized.red },
