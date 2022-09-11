@@ -112,7 +112,7 @@ theme.loadEditor = function ()
 		MatchParen =			{ fg = solarized.yellow, bg = solarized.none, style = 'bold' },
 		ModeMsg =				{ fg = solarized.fg },
 		MoreMsg =				{ fg = solarized.fg },
-		NonText =				{ fg = solarized.disabled },
+		NonText =				{ fg = solarized.comments },
 		Pmenu =					{ fg = solarized.fg, bg = solarized.none },
 		PmenuSel =				{ fg = solarized.fg, bg = solarized.active },
 		PmenuSbar =				{ fg = solarized.text, bg = solarized.contrast },
