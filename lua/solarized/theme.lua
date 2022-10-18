@@ -213,11 +213,12 @@ theme.loadTreeSitter = function ()
         TSCharacter=                { fg = solarized.orange},    -- For characters.
         TSConstructor =             { fg = solarized.purple}, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
         TSConstant =                { fg = solarized.yellow },    -- For constants
-        TSConstBuiltin =            { fg = solarized.blue },    -- For constant that are built in the language: `nil` in Lua.
+        TSConstBuiltin =            { fg = solarized.magenta },    -- For constant that are built in the language: `nil` in Lua.
         TSConstMacro =              { fg = solarized.blue },    -- For constants that are defined by macros: `NULL` in C.
+        TSMethodCall =              { fg = solarized.blue },    -- For constants that are defined by macros: `NULL` in C.
         TSError =                   { fg = solarized.error, style = 'bold' },    -- For syntax/parser errors.
         TSException =               { fg = solarized.yellow, style = 'bold' },    -- For exception related keywords.
-        TSField =                   { fg = solarized.blue }, -- For fields.
+        TSField =                   { fg = solarized.base0 }, -- For fields.
         TSFloat =                   { fg = solarized.red },    -- For floats.
         TSFuncMacro =               { fg = solarized.blue },    -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
         TSInclude =                 { fg = solarized.green, style = 'bold' },    -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
@@ -230,13 +231,13 @@ theme.loadTreeSitter = function ()
         TSParameterReference=       { fg = solarized.green },    -- For references to parameters of a function.
         TSProperty =                { fg = solarized.green }, -- Same as `TSField`.
         TSPunctDelimiter =          { fg = solarized.green }, -- For delimiters ie: `.`
-        TSPunctBracket =            { fg = solarized.purple }, -- For brackets and parens.
+        TSPunctBracket =            { fg = solarized.gray }, -- For brackets and parens.
         TSPunctSpecial =            { fg = solarized.purple }, -- For special punctutation that does not fall in the catagories before.
         TSString =                  { fg = solarized.cyan },    -- For strings.
         TSStringRegex =             { fg = solarized.blue }, -- For regexes.
         TSStringEscape =            { fg = solarized.fg }, -- For escape characters within a string.
         TSSymbol =                  { fg = solarized.yellow},    -- For identifiers referring to symbols or atoms.
-        TSType =                    { fg = solarized.blue },    -- For types.
+        TSType =                    { fg = solarized.yellow },    -- For types.
         TSTypeBuiltin =             { fg = solarized.yellow },    -- For builtin types.
         TSTag =                     { fg = solarized.red, style = 'bold' },    -- Tags like html tag names.
         TSTagDelimiter =            { fg = solarized.yellow },    -- Tag delimiter like `<` `>` `/`
@@ -268,7 +269,7 @@ theme.loadTreeSitter = function ()
         treesitter.TSConditional =             { fg = solarized.green}    -- For keywords related to conditionnals.
         treesitter.TSKeyword =                 { fg = solarized.green} -- For keywords that don't fall in previous categories.
         treesitter.TSRepeat =                  { fg = solarized.green, style = 'bold' }    -- For keywords related to loops.
-        treesitter.TSKeywordFunction =         { fg = solarized.blue} -- For keywords used to define a fuction.
+        treesitter.TSKeywordFunction =         { fg = solarized.green } -- For keywords used to define a fuction.
     end
 
     if vim.g.solarized_italic_functions == true then
