@@ -207,56 +207,38 @@ theme.loadTreeSitter = function ()
     -- TreeSitter highlight groups
     if vim.fn.has("nvim-0.8.0") == 1 then
         local treesitter = {
-            ["@annotation"] = "TSConditional",
-
+            ["@annotation"] = { fg = solarized.red, style = 'bold' },    -- For C++/Dart attributes, annotations that can be attached to the code to denote some kind of meta information.
             ["@attribute"] = { fg = solarized.yellow},    -- (unstable) TODO: docs
-
             ["@boolean"] = { fg = solarized.cyan},    -- For booleans.
-
             ["@character"] = { fg = solarized.orange},    -- For characters.
             ["@character.special"] = { fg = solarized.purple }, -- For special punctutation that does not fall in the catagories before.
             ["@comment"] = { fg = solarized.comments , bg = solarized.none, style = 'bold,italic' },    -- For comment blocks
-
             ["@conditional"] =  { fg = solarized.green, style = 'italic' },    -- For keywords related to conditionnals
-
             ["@constant"] = { fg = solarized.yellow },    -- For constants,
             ["@constant.builtin"] = { fg = solarized.magenta },    -- For constant that are built in the language: `nil` in Lua
             ["@constant.macro"] = { fg = solarized.magenta },    -- For constant that are built in the language: `nil` in Lua
-
             ["@constructor"] = { fg = solarized.purple}, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors
-
             ["@debug"] = { fg = solarized.red }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors
             ["@define"] = { fg = solarized.cyan },
-
             ["@error"] = { fg = solarized.error, style = 'bold' },    -- For syntax/parser errors.
             ["@exception"] = { fg = solarized.yellow, style = 'bold' },    -- For exception related keywords
-
             ["@field"] = { fg = solarized.base0 }, -- For fields.
-
             ["@float"] = { fg = solarized.red },    -- For floats.
-
             ["@function"] = { fg = solarized.blue, style = 'bold,italic' },    -- For fuction (calls and definitions)
-            ["@function.call"] = { fg = solarized.green },    -- For fuction (calls and definitions
+            ["@function.call"] = { fg = solarized.purple},    -- For fuction (calls and definitions
             ["@function.builtin"] = { fg = solarized.purple, style = 'bold,italic' },    -- For builtin functions: `table.insert` in Lua.
             ["@function.macro"] = { fg = solarized.blue },    -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
-
             ["@include"] = { fg = solarized.green, style = 'bold' },    -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
-
             ["@keyword"] = { fg = solarized.green, style = 'italic' }, -- For keywords that don't fall in previous categories.
             ["@keyword.function"] = { fg = solarized.green, style = 'bold,italic' }, -- For keywords used to define a fuction.
-            -- ["keyword.operator"] =
+            ["keyword.operator"] = {},
             ["@keyword.return"] = { fg = solarized.green, style = 'bold,italic' }, -- For keywords used to define a fuction.
-
             ["@label"] = { fg = solarized.red }, -- For labels: `label:` in C and `:label:` in Lua.
-
             ["@method"] = { fg = solarized.blue, style = 'bold,italic' },    -- For method calls and definitions.
             ["@method.call"] = { fg = solarized.blue },    -- For constants that are defined by macros: `NULL` in C.
-
             ["@namespace"] = { fg = solarized.blue },    -- For identifiers referring to modules and namespaces.
-
-            ["@none"] = "TSNone",
+            ["@none"] = {},
             ["@number"] = { fg = solarized.cyan },    -- For all numbers
-
             ["@operator"] = { fg = solarized.green}, -- For any operator: `+`, but also `->` and `*` in C.
             ["@parameter"] = { fg = solarized.purple }, -- For parameters of a function.
             ["@parameter.reference"] = { fg = solarized.green },    -- For references to parameters of a function.
@@ -265,24 +247,17 @@ theme.loadTreeSitter = function ()
             ["@punctuation.delimiter"] = { fg = solarized.green }, -- For delimiters ie: `.`
             ["@punctuation.bracket"] = { fg = solarized.gray }, -- For brackets and parens.
             ["@punctuation.special"] = { fg = solarized.purple }, -- For special punctutation that does not fall in the catagories before.
-
             ["@repeat"] = { fg = solarized.green, style = 'bold,italic' },    -- For keywords related to loops.
-
             ["@storageclass"] = { fg = solarized.cyan }, -- static, register, volatile, etc.
-
             ["@string"] = { fg = solarized.cyan },    -- For strings.
             ["@string.regex"] = { fg = solarized.blue }, -- For regexes.
             ["@string.escape"] = { fg = solarized.fg }, -- For escape characters within a string.
             ["@string.special"] = { fg = solarized.red }, -- any special symbol
-
             ["@symbol"] = { fg = solarized.yellow},    -- For identifiers referring to symbols or atoms."TSSymbol",
-
             ["@tag"] = { fg = solarized.red, style = 'bold' },    -- Tags like html tag names.
             ["@tag.attribute"] = { fg = solarized.yellow },    -- Tag delimiter like `<` `>` `/`
             ["@tag.delimiter"] = { fg = solarized.yellow },    -- Tag delimiter like `<` `>` `/`
-
             ["@text"] = { fg = solarized.text },    -- For strings considered text in a markup language.
-            -- ["text.strong"] =
             ["@text.emphasis"] = { fg = solarized.paleblue, style = 'bold' },    -- For text to be represented with emphasis.
             ["@text.underline"] = { fg = solarized.fg, bg = solarized.none, style = 'underline' },    -- For text to be represented with an underline.
             ["@text.strike"] = { },    -- For strikethrough text.
@@ -293,18 +268,14 @@ theme.loadTreeSitter = function ()
             ["@text.reference"] = { fg = solarized.yellow }, -- FIXME
             ["@text.environment"] = {},
             ["@text.environment.name"] = {},
-
             ["@text.note"] = {},
             ["@text.warning"] = {},
             ["@text.danger"] = {},
-
             ["@todo"] = { fg = solarized.magenta, bg = solarized.none, style = 'bold,italic' }, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX"
-
             ["@type"] = { fg = solarized.yellow },    -- For types.
             ["@type.builtin"] = { fg = solarized.yellow },    -- For builtin types.
             ["@type.qualifier"] = {},
             ["@type.definition"] = {},
-
             ["@variable"] = { fg = solarized.base0, style = 'italic' }, -- Any variable name that does not have another highlight.
             ["@variable.builtin"] = { fg = solarized.base0, style = 'italic' } -- Variable names that are defined by the languages, like `this` or `self`.,
         }
