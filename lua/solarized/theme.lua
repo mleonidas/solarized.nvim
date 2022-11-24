@@ -281,6 +281,9 @@ theme.loadTreeSitter = function ()
             ["rustMacro"] = { fg = solarized.green },
             ["rustFuncName"] = { fg = solarized.blue },
             ["rustStorage"] = { fg = solarized.red },
+            ["rustSigil"] = { fg = solarized.blue },
+            ["rustStructure"] = { fg = solarized.green },
+            ["rustConditional"] = { fg = solarized.green },
             ["rustEnumVariant"] = { fg = solarized.yellow }
         }
         return treesitter
