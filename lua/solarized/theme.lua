@@ -279,7 +279,9 @@ theme.loadTreeSitter = function ()
             ["@variable"] = { fg = solarized.base0, style = 'italic' }, -- Any variable name that does not have another highlight.
             ["@variable.builtin"] = { fg = solarized.base0, style = 'italic' }, -- Variable names that are defined by the languages, like `this` or `self`.,
             ["rustMacro"] = { fg = solarized.green },
-            ["rustFuncName"] = { fg = solarized.blue }
+            ["rustFuncName"] = { fg = solarized.blue },
+            ["rustStorage"] = { fg = solarized.red },
+            ["rustEnumVariant"] = { fg = solarized.yellow }
         }
         return treesitter
     else
