@@ -114,7 +114,7 @@ theme.loadEditor = function ()
 		MoreMsg =				{ fg = solarized.fg },
 		NonText =				{ fg = solarized.comments },
 		Pmenu =					{ fg = solarized.fg, bg = solarized.none },
-		PmenuSel =				{ fg = solarized.fg, bg = solarized.active },
+		PmenuSel =				{ fg = solarized.fg, bg = solarized.accent },
 		PmenuSbar =				{ fg = solarized.text, bg = solarized.contrast },
 		PmenuThumb =			{ fg = solarized.fg, bg = solarized.accent },
 		Question =				{ fg = solarized.green },
@@ -488,6 +488,10 @@ theme.loadPlugins = function()
         WhichKeySeperator =                     { fg = solarized.fg },
         WhichKeyFloating =                      { bg = solarized.float },
         WhichKeyFloat =                         { bg = solarized.float },
+
+        -- Cmp
+        CmpItemAbbrMatchDefault =               { fg = solarized.accent },
+        CmpItemAbbrMatchFuzzyDefault =          { fg = solarized.accent },
 
         -- LspSaga
         DiagnosticError =                       { fg = solarized.error },
