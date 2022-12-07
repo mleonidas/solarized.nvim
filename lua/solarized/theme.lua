@@ -285,6 +285,7 @@ theme.loadTreeSitter = function ()
             ["rustStructure"] = { fg = solarized.green },
             ["rustConditional"] = { fg = solarized.green },
             ["rustSelf"] = { fg = solarized.magenta },
+            ["rustAssert"] = { fg = solarized.green },
             ["rustEnumVariant"] = { fg = solarized.yellow }
         }
         return treesitter
